@@ -24,7 +24,7 @@ func (Q *Queue) Push(v int) {
 	Q.collections = append(Q.collections, v)
 }
 
-func (Q *Queue) Pop(v int) int {
+func (Q *Queue) Pop() int {
 	res := Q.collections[0]
 	Q.collections = Q.collections[1:]
 	return res
