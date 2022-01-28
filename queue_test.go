@@ -10,7 +10,7 @@ func TestPush(t *testing.T) {
 	}
 }
 
-func Test(t *testing.T) {
+func TestPop(t *testing.T) {
 	q := NewQueue()
 	if !q.IsEmpty() {
 		t.Errorf("Expected %t, got: %t", true, q.IsEmpty())
